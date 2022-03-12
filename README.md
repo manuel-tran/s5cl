@@ -10,13 +10,13 @@ S5CL employs the following steps:
 
 * Apply weak augmentations (e.g., rotation) and strong augmentations (e.g., cropping) to labeled images. 
 
-* Use a supervised contrastive loss to push feature representations of images from the same class towards each other and those from other classes away. 
+* Use a supervised contrastive loss to push feature representations of images from the same class towards each other and feature representations from other classes away. 
 
 * If unlabeled images are available, augment them weakly and strongly as well. 
 
 * Insert them into a self-supervised contrastive loss and treat each image as its own class. 
 
-* Since we are in the same embedding space, the unlabeld images indirectly will be moved to their corresponding labeled clusters. 
+* Since we use the same embedding space, the unlabeld images will be moved to their corresponding labeled clusters. 
 
 * After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the loss with a semi-supervised contrastive loss. 
 
