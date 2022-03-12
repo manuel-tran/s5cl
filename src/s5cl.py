@@ -78,7 +78,7 @@ def s5cl(
         embedding_c = embedding[:size_l]
         output = classifier(embedding_c)
         
-        if step >= args['threshold']:
+        if step > args['threshold']:
             with torch.no_grad():
                 _, label_p = torch.max(classifier(embedding[2*size_l:2*size_l+size_u]), 1)
             target_u = torch.cat((label_p, label_p), 0)
