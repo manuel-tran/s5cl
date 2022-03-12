@@ -1,4 +1,4 @@
-# S5CL: Supervised, self-supervised, and semi-supervised learning contrastive learning
+# S5CL: supervised, self-supervised, and semi-supervised contrastive learning
 
 S5CL unifies fully supervised, self-supervised, and semi-supervised learning into one single framework. It uses three contrastive losses for labeled, unlabeled and pseudo-labeled data to learn a hierarchy of feature representations. In particular, given an input, similar images and augmented views are embedded the closest, followed by different looking images, while images from different classes have the greatest distance.
 
