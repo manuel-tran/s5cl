@@ -13,6 +13,9 @@ After a few epochs, use the classifier to predict pseudo-labeles for the unlabel
 ![illustration](img/illustration.png)
 
 
+## Implementation
+
+
 ## Losses
 
 To avoid that the contrastive losses on labeled and unlabeld images to be in conflict with each other, the hyperparameter which controls the cluster density should be different.
