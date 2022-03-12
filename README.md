@@ -8,9 +8,9 @@ S5CL unifies fully supervised, self-supervised, and semi-supervised learning int
 
 S5CL employs the following steps: 
 
-* Apply weak augmentations (e.g., rotation) and strong augmentations (e.g., cropping) on labeled images. 
+* Apply weak augmentations (e.g., rotation) and strong augmentations (e.g., cropping) to labeled images. 
 
-* Use a supervised contrastive loss to push feature representations of images from the same class together and those from other classes away. 
+* Use a supervised contrastive loss to push feature representations of images from the same class towards each other and those from other classes away. 
 
 * If unlabeled images are available, augment them weakly and strongly as well. 
 
