@@ -16,7 +16,7 @@ S5CL employs the following steps:
 
 * Insert them into a self-supervised contrastive loss and treat each image as its own class. 
 
-* Since we use the same embedding space for both labeled and unlabeled data, the unlabeld images will indirectly be moved to their corresponding labeled clusters. 
+* Since we use the same embedding space for both labeled and unlabeled data, the unlabeled images will indirectly be moved to their corresponding labeled clusters. 
 
 * After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the loss with a semi-supervised contrastive loss. 
 
