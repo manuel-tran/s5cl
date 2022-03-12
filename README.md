@@ -8,5 +8,5 @@ Apply weak augmentations (e.g., rotation) and strong augmentations (e.g., croppi
 
 If unlabeled images are available, augment them weakly and strongly as well. Insert them into a self-supervised contrastive loss and treat each image as its own class. Since we are in the same embedding space, the unlabeld images indiretcly will be moved to their corresponding labeled clusters.
 
-After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the loss with a semi-supervised contrastive loss. 
+After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the loss with a semi-supervised contrastive loss. To avoid that the contrastive losses on labeled and unlabeld images to be in conflict with each other, the hyperparameter which controls the cluster density should be different.
 
