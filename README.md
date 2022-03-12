@@ -10,6 +10,8 @@ If unlabeled images are available, augment them weakly and strongly as well. Ins
 
 After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the loss with a semi-supervised contrastive loss. The image below serves as an intuition of how this method works, while the other two figures above illustrate the actual implementation. 
 
+    ![General concept of S5CL](img/illustration.png)
+
 
 ## Losses
 
