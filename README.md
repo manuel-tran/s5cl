@@ -4,9 +4,11 @@ S5CL combines fully supervised, self-supervised, and semi-supervised learning in
 
 ## Description
 
-Here, we give a quick overview of S5CL. The first iamge serves as an intuition of how our method works, while the two others illustrate the actual implementation.
+Here, we give a quick overview of S5CL: Apply weak augmentations (e.g., rotation) and strong augmentations (e.g., cropping) on labeled images. Then use a supervised contrastive loss to push feature representations of augmented images from the same class together and those from other classes away. 
 
-Apply weak augmentations (e.g., rotation) and strong augmentations (e.g., cropping) on labeled images. Then use a supervised contrastive loss to push feature representations of augmented images from the same class together and those from other classes away. If unlabeled images are available, augment them weakly and strongly as well. Insert them into a self-supervised contrastive loss and treat each image as its own class. Since we are in the same embedding space, the unlabeld images indirectly will be moved to their corresponding labeled clusters. After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the loss with a semi-supervised contrastive loss. 
+If unlabeled images are available, augment them weakly and strongly as well. Insert them into a self-supervised contrastive loss and treat each image as its own class. Since we are in the same embedding space, the unlabeld images indirectly will be moved to their corresponding labeled clusters. 
+
+After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the loss with a semi-supervised contrastive loss. The first image below serves as an intuition of how this method works, while the other two illustrate the actual implementation. 
 
 
 ## Losses
