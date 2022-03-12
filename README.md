@@ -8,7 +8,7 @@ Here, we give a quick overview of S5CL: Apply weak augmentations (e.g., rotation
 
 If unlabeled images are available, augment them weakly and strongly as well. Insert them into a self-supervised contrastive loss and treat each image as its own class. Since we are in the same embedding space, the unlabeld images indirectly will be moved to their corresponding labeled clusters. 
 
-After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the loss with a semi-supervised contrastive loss. The first image below serves as an intuition of how this method works, while the other two illustrate the actual implementation. 
+After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the loss with a semi-supervised contrastive loss. The first image below serves as an intuition of how this method works, while the other two figures above illustrate the actual implementation. 
 
 
 ## Losses
