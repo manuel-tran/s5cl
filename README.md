@@ -34,4 +34,4 @@ It is worth noting, that our framework also works with other contrastive or metr
 
 ## Examples
 
-The code can directly be used to reproduce the results from the paper. We have provided two notebook that show the experiments on NCT-CRC-HE-100K.
+The code can directly be used to reproduce the results from the paper. We have provided notebooks that show the experiments on NCT-CRC-HE-100K.
