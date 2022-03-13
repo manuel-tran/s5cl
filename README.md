@@ -4,7 +4,7 @@
 
 S5CL unifies fully-supervised, self-supervised, and semi-supervised learning into one single framework. In particular, S5CL uses a hierarchy of contrastive losses to extract feature representations from both labeled and unlabeled data at the same time. This leads to richer, more structured, and more compact feature embeddings that can be used for various downstream tasks such as image classification or image retrieval.
 
-Evaluations on two public datasets show strong improvements over other fully-supervised and semi-supervised methods in case pf sparse labels.: On the colon cancer dataset NCT-CRC-HE-100K, the accuracy increases by up to 9%; while on the highly unbalanced leukemia single-cell dataset Munich AML Morphology, the F1-score increases by up to 6%. Notably, on these two datasets, S5CL also outperforms the SOTA semi-supervised method Meta Pseudo Labels (MPL).
+Evaluations on two public datasets show strong improvements over other fully-supervised and semi-supervised methods in case pf sparse labels: On the colon cancer dataset NCT-CRC-HE-100K, the accuracy increases by up to 9%; while on the highly unbalanced leukemia single-cell dataset Munich AML Morphology, the F1-score increases by up to 6%. Notably, on these two datasets, S5CL also outperforms the SOTA semi-supervised method Meta Pseudo Labels (MPL).
 
 ## Overview
 
