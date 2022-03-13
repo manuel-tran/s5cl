@@ -22,8 +22,7 @@ S5CL employs the following steps:
 
 * After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the self-supervised contrastive loss with a semi-supervised contrastive loss. 
 
-![illustration](img/illustration.png)
-
+Below we have three figures: Figure (a) shows an intuitive explanation of S5CL, Figure (b) depicts a detailed description of the framework, and Figure (c) displays some examples of weak and strong augmentations that we used in our experiments.
 
 ## Implementation
 
