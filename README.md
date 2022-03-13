@@ -2,7 +2,9 @@
 
 ![results](img/results.png)
 
-S5CL unifies fully supervised, self-supervised, and semi-supervised learning into one single framework. It uses three contrastive losses for labeled, unlabeled and pseudo-labeled data to learn a hierarchy of feature representations. In particular, given an input, similar images and augmented views are embedded the closest, followed by different looking images, while images from different classes have the greatest distance.
+S5CL unifies fully-supervised, self-supervised, and semi-supervised learning into one single framework. In particular, S5CL uses a hierarchy of contrastive losses to extract feature representations from labeled, unlabeled, and pseudo-labeled data.
+
+Evaluations on two public datasets show strong improvements over other fully-supervised and semi-supervised methods in case of sparse labels: On the colon cancer dataset NCT-CRC-HE-100K, the accuracy increases by up to 9%; while on the highly unbalanced leukemia single-cell dataset Munich-AML-Morphology, the F1-score increases by up to 6%. 
 
 ## Overview
 
@@ -30,5 +32,5 @@ S5CL employs the following steps:
 
 To avoid that the contrastive losses on labeled and unlabeld images to be in conflict with each other, the hyperparameter which controls the cluster density should be different.
 
-In our case we, use the SupConLoss with a single hyperparameters called the temperature. Its value should be higher for unlabeled images than for labeled images. Instead of this loss, it is also pososible to use this implementation with other loss functions.
+In our case we, use the SupConLoss with a single hyperparameters called the temperature. Its value should be higher for unlabeled images than for labeled images. Instead of this loss, it is also possible to use this implementation with other loss functions.
 
