@@ -32,3 +32,6 @@ To avoid conflicts between the supervised, self-supervised , and semi-supervised
 
 It is worth noting, that our framework also works with other contrastive or metric losses. To use other loss functions, the training script might need to be adapted to accommodate mining or additional hyperparameters.
 
+## Examples
+
+The code can directly be used to reproduce the results from the paper. We have provided two notebook that show the experiments on NCT-CRC-HE-100K.
