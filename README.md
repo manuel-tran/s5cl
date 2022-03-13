@@ -27,7 +27,9 @@ S5CL employs the following steps:
 
 ## Implementation
 
-We use the state-of-the-art SupConLoss. It outperforms other contrastive losses such as SimCLR, does not require hard-negative mining, and only has one hyperparameter called the temperature that controls the cluster density. To avoid conflicts between the supervised, self-supervised , and semi-supervised losses, the temperature for the unlabeled images should always be larger than the temperature for the labeled images.
+We use the state-of-the-art SupConLoss. It outperforms other contrastive losses such as SimCLR, does not require hard-negative mining, and only has one hyperparameter called the temperature that controls the cluster density. 
+
+To avoid conflicts between the supervised, self-supervised , and semi-supervised losses, the temperature for the unlabeled images should always be larger than the temperature for the labeled images.
 
 It is worth noting, that our framework also works with other contrastive or metric losses. To use other loss functions, the training script might need to be adapted to accommodate mining or additional hyperparameters.
 
