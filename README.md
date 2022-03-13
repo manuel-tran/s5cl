@@ -2,7 +2,7 @@
 
 ![results](img/results.png)
 
-S5CL unifies fully-supervised, self-supervised, and semi-supervised learning into one single framework. In particular, S5CL uses a hierarchy of contrastive losses to extract feature representations from labeled, unlabeled, and pseudo-labeled data.
+S5CL unifies fully-supervised, self-supervised, and semi-supervised learning into one single framework. In particular, S5CL uses a hierarchy of contrastive losses to extract feature representations from labeled and unlabeled data.
 
 Evaluations on two public datasets show strong improvements over other fully-supervised and semi-supervised methods in case of sparse labels: On the colon cancer dataset NCT-CRC-HE-100K, the accuracy increases by up to 9%; while on the highly unbalanced leukemia single-cell dataset Munich-AML-Morphology, the F1-score increases by up to 6%. 
 
