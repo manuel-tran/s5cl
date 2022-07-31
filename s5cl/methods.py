@@ -37,9 +37,6 @@ def s5cl(
     loss_history = []
      
     for step in range(args['start_step'], args['total_steps']):
-        if step > 0 and step % args['eval_step'] == 0:
-            model = Sequential(encoder, embedder, classifier)
-            evaluate(model, dataloader_v, device)
         
         try:
             (weak_l, strong_l), label_l = next(dataiter_l)
@@ -102,6 +99,10 @@ def s5cl(
                   '{:6.4f}'.format(loss_t.item()))
             loss_history.append(loss_t.item())
             
+        if step > 0 and step % args['eval_step'] == 0:
+            model = Sequential(encoder, embedder, classifier)
+            evaluate(model, dataloader_v, device)
+            
 #----------------------------------------------------------------------------
 
 def scl(
@@ -130,9 +131,6 @@ def scl(
     loss_history = []
      
     for step in range(args['start_step'], args['total_steps']):
-        if step > 0 and step % args['eval_step'] == 0:
-            model = Sequential(encoder, embedder, classifier)
-            evaluate(model, dataloader_v, device)
         
         try:
             data, target = next(dataiter_t)
@@ -166,6 +164,10 @@ def scl(
                   ' (' + '{:3.0f}'.format(100 * step / args['total_steps']) + '%)]  Loss: ' +
                   '{:6.4f}'.format(loss_t.item()))
             loss_history.append(loss_t.item())
+            
+        if step > 0 and step % args['eval_step'] == 0:
+            model = Sequential(encoder, embedder, classifier)
+            evaluate(model, dataloader_v, device)
             
 #----------------------------------------------------------------------------
 
