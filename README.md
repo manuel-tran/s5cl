@@ -31,11 +31,9 @@ S5CL employs the following steps:
 
 * After a few epochs, use the classifier to predict pseudo-labeles for the unlabeled images and replace the self-supervised contrastive loss with a semi-supervised contrastive loss. 
 
-Below we have three figures: Figure (a) shows an intuitive explanation of S5CL, Figure (b) depicts a detailed description of the framework, and Figure (c) displays some examples of weak and strong augmentations that we used in our experiments.
-
 ## Implementation
 
-We use the state-of-the-art SupConLoss. It outperforms other contrastive losses such as SimCLR, does not require hard-negative mining, and only has one hyperparameter called the temperature that controls the cluster density. 
+We use the state-of-the-art SupConLoss as the loss function. It outperforms other contrastive losses such as the TripletLoss, does not require hard-negative mining, and only has one hyperparameter called the temperature that controls the cluster density. 
 
 To avoid conflicts between the supervised, self-supervised , and semi-supervised losses, the temperature for the unlabeled images should always be larger than the temperature for the labeled images.
 
