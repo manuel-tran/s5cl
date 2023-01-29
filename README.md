@@ -7,12 +7,15 @@ S5CL unifies fully-supervised, self-supervised, and semi-supervised learning int
 Evaluations on two public datasets show strong improvements over other fully-supervised and semi-supervised methods in case of sparse labels: On the colon cancer dataset NCT-CRC-HE-100K, the accuracy increases by up to 9%; while on the highly unbalanced leukemia single-cell dataset Munich AML Morphology, the F1-score increases by up to 6%. Notably, on these two datasets, S5CL also outperforms the SOTA semi-supervised method Meta Pseudo Labels (MPL).
 
 ```
-@article{Tran:2022,
-  title={S5CL: Unifying Fully-Supervised, Self-Supervised, and Semi-Supervised Learning Through Hierarchical Contrastive Learning},
-  author={Manuel Tran and Sophia J. Wagner and Melanie Boxberg and Tingying Peng},
-  journal={arXiv preprint arXiv:2203.07307},
-  year={2022}
-}
+@INPROCEEDINGS{Tran_2022_MICCAI,
+  author    = {Tran, Manuel and Wagner, Sophia J. and Boxberg, Melanie and Peng, Tingying},
+  title     = {S5CL: Unifying Fully-Supervised, Self-supervised, and Semi-supervised Learning Through Hierarchical Contrastive Learning},
+  booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2022},
+  pages     = {99--108},
+  year      = {2022},
+  publisher = {Springer Nature Limited},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-031-16434-7_10}
+ }
 ```
 
 ## Overview
